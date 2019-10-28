@@ -21,6 +21,10 @@ EXAMPLES-$(CONFIG_TRANSCODE_AAC_EXAMPLE)     += transcode_aac
 EXAMPLES-$(CONFIG_TRANSCODING_EXAMPLE)       += transcoding
 EXAMPLES-$(CONFIG_VAAPI_ENCODE_EXAMPLE)      += vaapi_encode
 EXAMPLES-$(CONFIG_VAAPI_TRANSCODE_EXAMPLE)   += vaapi_transcode
+EXAMPLES-${CONFIG_HELLO_WORLD_EXAMPLE}	    += hello_world
+EXAMPLES-${CONFIG_REMUX_EXAMPLE}		    += remux
+EXAMPLES-${CONFIG_HLS_ENC_EXAMPLE}	    += hls_enc
+EXAMPLES-$(CONFIG_AV_FILTER_EXAMPLE)       += av_filter
 
 EXAMPLES       := $(EXAMPLES-yes:%=doc/examples/%$(PROGSSUF)$(EXESUF))
 EXAMPLES_G     := $(EXAMPLES-yes:%=doc/examples/%$(PROGSSUF)_g$(EXESUF))
